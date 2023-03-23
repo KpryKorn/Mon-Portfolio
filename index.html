@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio de Sacha ROFFINI, apprenti développeur frontend, vitrine pour sa recherche d'alternance"
+    />
+    <meta property="og:title" content="Portfolio de Sacha ROFFINI" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:description"
+      content="Mon portfolio de développeur frontend junior"
+    />
+    <meta property="og:url" content="https://kprykorn.dev" />
+    <meta property="og:image" content="./assets/images/opengraph.jpg" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.min.css" />
+    <script defer type="module" src="script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/rough-notation?module"
+    ></script>
+    <link
+      rel="shortcut icon"
+      href="./assets/icons/logo.svg"
+      type="image/x-icon"
+    />
+    <title>KpryKorn - Développeur JavaScript en apprentissage</title>
+  </head>
+  <body>
+    <header class="bg-light">
+      <div class="container">
+        <nav class="flex-row">
+          <div class="logo">
+            <img
+              src="./assets/icons/logo.svg"
+              alt="Logo KpryKorn"
+              title="Logo KpryKorn"
+            />
+          </div>
+          <div>
+            <ul class="flex-row nav-links">
+              <li>
+                <a href="#skills" class="underline"><span>1.</span>skills</a>
+              </li>
+              <li>
+                <a href="#work-section" class="underline"
+                  ><span>2.</span>projets</a
+                >
+              </li>
+              <li>
+                <a href="#experiences" class="underline"
+                  ><span>3.</span>expériences</a
+                >
+              </li>
+              <li>
+                <a href="#contact" class="underline"><span>4.</span>contact</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <ul class="flex-row social-links">
+              <li>
+                <a
+                  href="https://github.com/KpryKorn"
+                  target="_blank"
+                  rel="noopener"
+                  ><img
+                    src="./assets/icons/github-line.svg"
+                    alt="Profil Github"
+                    title="Profil Github de Sacha ROFFINI"
+                /></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/sacha-roffini-5381a2233/"
+                  target="_blank"
+                  rel="noopener"
+                  ><img
+                    src="./assets/icons/linkedin-fill.svg"
+                    alt="Profil LinkedIn"
+                    title="Profil LinkedIn de Sacha ROFFINI"
+                /></a>
+              </li>
+            </ul>
+          </div>
+          <img
+            src="./assets/icons/menu-burger.svg"
+            alt="Menu mobile"
+            class="menu-burger"
+          />
+        </nav>
+      </div>
+    </header>
+
+    <main id="hero-section" class="bg-light">
+      <div class="container">
+        <div class="split">
+          <div class="hero__screen">
+            <div class="screen-image"></div>
+            <div class="screen-overlay"></div>
+          </div>
+          <div class="hero__text">
+            <div class="hero__text-presentation">
+              <div class="line">
+                <p id="prenom" class="word fancy">Sacha</p>
+                <p id="nom" class="word fancy">ROFFINI</p>
+              </div>
+              <div class="line">
+                <p id="dev" class="word fancy">Dev.</p>
+                <p id="junior" class="word fancy">Junior</p>
+              </div>
+              <div class="line">
+                <p id="javascript" class="word fancy">JavaScript</p>
+                <p id="&" class="word fancy">&</p>
+              </div>
+              <div class="line">
+                <p id="apprenti" class="word fancy">Apprenti</p>
+                <p class="word fancy">👨‍💻</p>
+              </div>
+            </div>
+            <p class="sous-titre">
+              Encore en études, j'aspire à devenir un développeur front-end. À
+              la recherche d'une
+              <span id="e1">alternance à Tours pour Septembre 2023</span>, je me
+              forme actuellement en autodidacte à l'écosystème React.
+            </p>
+            <div>
+              <a
+                href="mailto:roffinisacha@gmail.com"
+                title="Contacter Sacha par mail"
+                class="cta"
+                >Me contacter</a
+              >
+              <a
+                href="https://github.com/KpryKorn"
+                target="_blank"
+                rel="noopener"
+                title="Github repo de KpryKorn"
+                class="cta"
+                >Mon Github</a
+              >
+            </div>
+          </div>
+        </div>
+        <button id="scrollToTopBtn" aria-label="scroll to top button">
+          <img src="./assets/icons/arrow-up-line.svg" alt="" />
+        </button>
+      </div>
+    </main>
+
+    <section id="skills" class="bg-light">
+      <div class="container">
+        <div class="work__title">
+          <h2>skills</h2>
+          <p class="sous-titre">
+            Un détail de mes compétences, tirées de mes 3 années d'études en
+            webmarketing, mon alternance, ainsi que mon apprentissage
+            autodidacte du développement web.
+          </p>
+        </div>
+        <div class="skills__feature">
+          <div class="skills__feature-card">
+            <img
+              src="./assets/icons/code.png"
+              alt="Sacha ROFFINI maîtrise le développement frontend"
+            />
+            <p class="skills-titre">Développement Frontend</p>
+          </div>
+          <div class="skills__feature-card">
+            <img
+              src="./assets/icons/seo.png"
+              alt="Sacha ROFFINI maîtrise le développement frontend"
+            />
+            <p class="skills-titre">Optimisation SEO</p>
+          </div>
+          <div class="skills__feature-card">
+            <img
+              src="./assets/icons/design.png"
+              alt="Sacha ROFFINI maîtrise le développement frontend"
+            />
+            <p class="skills-titre">Webdesign</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="work-section" class="bg-light">
+      <div class="container">
+        <div class="work__title">
+          <h2>projets</h2>
+          <p class="sous-titre">
+            Voici mes différents projets publics. Certains ont été réalisés dans
+            le cadre de mon cursus en
+            <span id="e2">marketing digital et e-commerce</span>, d'autres sont
+            des projets personnels.
+          </p>
+        </div>
+        <div class="work__filters">
+          <button class="btn filter-button active" data-filter="tout">
+            Tout (4)
+          </button>
+          <button class="btn filter-button" data-filter="react">
+            React (0)
+          </button>
+          <button class="btn filter-button" data-filter="javascript">
+            JavaScript (4)
+          </button>
+          <button class="btn filter-button" data-filter="html">
+            HTML&CSS (4)
+          </button>
+          <button class="btn filter-button" data-filter="firebase">
+            Next13 (0)
+          </button>
+        </div>
+
+        <div class="work__card-container">
+          <div class="work__card project html javascript show">
+            <a
+              href="https://kprykorn.github.io/Clone-Uber-main/"
+              title="Lien vers la page d'accueil du clone d'Uber"
+              target="_blank"
+              rel="noopener"
+            >
+              <img
+                src="./assets/images/uber-clone.png"
+                alt="Clone du site Uber"
+                title="Clone du site Uber"
+                class="work__img"
+                loading="lazy"
+              />
+            </a>
+            <h4>Clone d'Uber</h4>
+            <div class="work__card-filters">
+              <button class="btn">HTML&CSS</button>
+              <button class="btn">JavaScript</button>
+            </div>
+            <p class="sous-titre">
+              Clone de la homepage d'Uber réalisé dans le but de m'entraîner à
+              l'intégration d'une maquette. J'ai rajouté quelques animations et
+              effets supplémentaires.
+            </p>
+            <div>
+              <a
+                href="https://kprykorn.github.io/Clone-Uber-main/"
+                title="Lien vers la page d'accueil du clone d'Uber"
+                target="_blank"
+                rel="noopener"
+                class="cta"
+                ><img src="./assets/icons/eye-white.svg" alt="Oeil" /> Aperçu</a
+              >
+              <a
+                href="https://github.com/KpryKorn/Clone-Uber-main"
+                target="_blank"
+                rel="noopener"
+                title="Lien vers le repo Github"
+                class="cta"
+                ><img src="./assets/icons/github-line.svg" alt="Logo Github" />
+                Repo Github</a
+              >
+            </div>
+          </div>
+          <div class="work__card project html javascript show">
+            <img
+              src="./assets/images/opengraph.jpg"
+              alt="Portfolio Sacha ROFFINI"
+              title="Portfolio Sacha ROFFINI"
+              class="work__img"
+              loading="lazy"
+            />
+            <h4>Mon portfolio</h4>
+            <div class="work__card-filters">
+              <button class="btn">HTML&CSS</button>
+              <button class="btn">JavaScript</button>
+            </div>
+            <p class="sous-titre">
+              Création de mon portfolio dans le but d'avoir une vitrine sur
+              internet, l'idée est de pouvoir l'améliorer lorsque je maitriserai
+              mieux React & MDX pour y ajouter une fonction de blog.
+            </p>
+          </div>
+          <div class="work__card project html javascript show">
+            <img
+              src="./assets/images/ecodyssee-home.jpg"
+              alt="Projet d'études"
+              title="Projet d'études"
+              class="work__img"
+              loading="lazy"
+            />
+
+            <h4>Ecodyssée - Agence de voyage</h4>
+            <div class="work__card-filters">
+              <button class="btn">HTML&CSS</button>
+              <button class="btn">JavaScript</button>
+            </div>
+            <p class="sous-titre">
+              Homepage et page de résultats d'une agence de voyage pour un
+              projet étudiants de lancement de startup. Filtres liés à une BDD
+              pour proposer la meilleure offre possible selon des critères
+              sélectionnés par le client.
+            </p>
+          </div>
+          <div class="work__card project html javascript show">
+            <a
+              href="https://kprykorn.github.io/SaaS-Guiboles/index.html"
+              title="Lien vers la page d'accueil de la solution Les Guiboles"
+              target="_blank"
+              rel="noopener"
+            >
+              <img
+                src="./assets/images/guiboles-home.webp"
+                alt="Homepage site vitrine d'une solution SaaS"
+                title="Homepage site vitrine d'une solution SaaS"
+                class="work__img"
+                loading="lazy"
+              />
+            </a>
+            <h4>Les Guiboles - solution SaaS pour Pédibus</h4>
+            <div class="work__card-filters">
+              <button class="btn">HTML&CSS</button>
+              <button class="btn">JavaScript</button>
+            </div>
+            <p class="sous-titre">
+              Site vitrine adapté d'une maquette fournie par une entreprise pour
+              un projet d'études interdisciplinaire de Septembre 2022 à Mars
+              2023 dans le cadre de ma licence.
+            </p>
+            <div>
+              <a
+                href="https://kprykorn.github.io/SaaS-Guiboles/index.html"
+                title="Homepage site vitrine d'une solution SaaS"
+                target="_blank"
+                rel="noopener"
+                class="cta"
+                ><img src="./assets/icons/eye-white.svg" alt="Oeil" /> Aperçu</a
+              >
+              <a
+                href="https://github.com/KpryKorn/SaaS-Guiboles"
+                target="_blank"
+                rel="noopener"
+                title="Lien vers le repo Github"
+                class="cta"
+                ><img src="./assets/icons/github-line.svg" alt="Logo Github" />
+                Repo Github</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experiences" class="bg-light">
+      <div class="container">
+        <div class="work__title">
+          <h2>expériences</h2>
+          <p class="sous-titre">
+            J'ai commencé mon parcours de développeur début 2022 et sors tout
+            juste de 3 ans d'une double licence en marketing digital et
+            communication. Étant plus dans la réalisation technique,
+            <span id="e3">
+              je souhaite continuer dans la voie du développement web </span
+            >.
+          </p>
+        </div>
+        <div class="exp__block text-center">
+          <h4 class="text-background">Scolaire</h4>
+          <p class="exp__titre">LP MATIC</p>
+          <p class="exp__entreprise">IUT de Tours</p>
+          <p class="sous-titre">
+            Issu de 3 ans d’études en marketing digital, je suis très au point
+            quant aux demandes en termes de SEO et d’optimisation web.
+          </p>
+          <p class="exp__date">2020-2023</p>
+        </div>
+        <div class="exp__block text-center">
+          <h4 class="text-background">Professionnel</h4>
+          <div class="exp__col">
+            <p class="exp__titre">Intégrateur web</p>
+            <p class="exp__entreprise">DC Expansion</p>
+            <p class="sous-titre">
+              Optimisation SEO, Intégration Prestashop & Webdesign
+            </p>
+            <p class="exp__date">Septembre 2022 -</p>
+          </div>
+          <div class="exp__col">
+            <p class="exp__titre">Projet universitaire</p>
+            <p class="exp__entreprise">Les Guiboles</p>
+            <p class="sous-titre">
+              Création d'un site vitrine, Développement d'une SaaS B2B, Gestion
+              de projet
+            </p>
+            <p class="exp__date">Septembre 2022 - Mars 2023</p>
+          </div>
+          <div class="exp__col">
+            <p class="exp__titre">Stage intégrateur web</p>
+            <p class="exp__entreprise">L&B Synergie</p>
+            <p class="sous-titre">
+              Intégration de maquettes Adobe XD en HTML/CSS/JS, Webdesign
+            </p>
+            <p class="exp__date">Avril 2022 - Juin 2022</p>
+          </div>
+          <div class="exp__col">
+            <p class="exp__entreprise">Télécharger mon CV au format .PDF :</p>
+            <a href="./assets/images/CV_Sacha_dev.pdf" download class="cta"
+              ><img src="./assets/icons/download-white.svg" alt="" />
+              Télécharger
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <div class="split">
+          <div>
+            <img
+              src="./assets/images/contact.png"
+              alt="image de contact sacha roffini"
+              loading="lazy"
+            />
+          </div>
+          <div>
+            <form action="https://formspree.io/f/mbjeaown" method="POST">
+              <label for="nom">Votre nom (*)</label>
+              <input type="text" name="nom" id="nomf" required />
+              <label for="societe">Société pour laquelle vous travaillez</label>
+              <input type="text" name="societe" id="societe" />
+              <label for="email">Votre adresse email (*)</label>
+              <input type="mail" name="email" id="email" required />
+              <label for="message">Votre message (*)</label>
+              <textarea name="message" id="message" required></textarea>
+              <input type="submit" class="btn" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-dark">
+      <div class="container">
+        <p class="flex-row">
+          <span id="e4">Sacha ROFFINI</span> - Made with
+          <img src="./assets/icons/heart-3-fill.svg" alt="" />
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
