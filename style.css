@@ -328,6 +328,11 @@ header nav {
   text-transform: uppercase;
   font-weight: 700;
 }
+@media (min-width: 1800px) {
+  .hero__text-presentation {
+    font-size: 3.5rem;
+  }
+}
 .hero__screen {
   position: relative;
   width: 500px;
@@ -550,8 +555,11 @@ header nav {
 
 /* CONTACT SECTION */
 
-#contact img {
+.contact-img {
   height: 80%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  object-position: center;
 }
 
 input,
